@@ -1,0 +1,131 @@
+/*
+ * Copyright (c) 2011 Toni Spets <toni.spets@iki.fi>
+ *
+ * Permission to use, copy, modify, and distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the above
+ * copyright notice and this permission notice appear in all copies.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+ * WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ * ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+ */
+
+.cncnet-button-cnc {
+    font-family: sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    border-top: 1px solid #a8a8a8;
+    border-left: 1px solid #a8a8a8;
+    border-right: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    border-radius: 3px;
+    background: #242c34 none no-repeat 5px 50%;
+    padding: 0px 10px;
+    color: #54b024;
+    margin: 0.5em 0;
+}
+
+.cncnet-button-cnc:active {
+    border-top: 1px solid #000000;
+    border-left: 1px solid #000000;
+    border-right: 1px solid #a8a8a8;
+    border-bottom: 1px solid #a8a8a8;
+    color: #54fc54;
+}
+
+.cncnet-button-ra {
+    font-family: sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    border-top: 1px solid #cc0000;
+    border-left: 1px solid #cc0000;
+    border-right: 1px solid #400000;
+    border-bottom: 1px solid #400000;
+    border-radius: 3px;
+    background: #600000 none no-repeat 5px 50%;
+    padding: 0px 10px;
+    color: #cc0000;
+    margin: 0.5em 0;
+}
+
+.cncnet-button-ra:active {
+    border-top: 1px solid #400000;
+    border-left: 1px solid #400000;
+    border-right: 1px solid #cc0000;
+    border-bottom: 1px solid #cc0000;
+    color: white;
+}
+
+.cncnet-button-ts {
+    font-family: sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    border-top: 1px solid #4ab6de;
+    border-left: 1px solid #4ab6de;
+    border-right: 1px solid #183a47;
+    border-bottom: 1px solid #183a47;
+    border-radius: 3px;
+    background: #1c4555 none no-repeat 5px 50%;
+    padding: 0px 10px;
+    color: #54b024;
+    margin: 0.5em 0;
+}
+
+.cncnet-button-ts:active {
+    border-top: 1px solid #183a47;
+    border-left: 1px solid #183a47;
+    border-right: 1px solid #4ab6de;
+    border-bottom: 1px solid #4ab6de;
+    color: #73ff00;
+}
+
+.cncnet-button-ra2 {
+    font-family: sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    border-top: 1px solid #cc0000;
+    border-left: 1px solid #cc0000;
+    border-right: 1px solid #400000;
+    border-bottom: 1px solid #400000;
+    border-radius: 3px;
+    background: #900507 none no-repeat 5px 50%;
+    padding: 0px 10px;
+    color: #fcfd0f;
+    margin: 0.5em 0;
+}
+
+.cncnet-button-ra2:active {
+    border-top: 1px solid #400000;
+    border-left: 1px solid #400000;
+    border-right: 1px solid #cc0000;
+    border-bottom: 1px solid #cc0000;
+    color: #fcfd0f;
+}
+
+.cncnet-button-16 {
+    font-size: 13px;
+    line-height: 26px;
+    padding: 0px 10px 0px 26px;
+}
+
+.cncnet-button-32 {
+    font-size: 16px;
+    line-height: 42px;
+    padding: 0px 10px 0px 42px;
+}
+
+.cncnet-button-16-cnc95 { background-image: url(../img/icons/16/cnc95.png) }
+.cncnet-button-16-ra95 { background-image: url(../img/icons/16/ra95.png) }
+.cncnet-button-16-ts { background-image: url(../img/icons/16/ts.png) }
+.cncnet-button-16-ra2 { background-image: url(../img/icons/16/ra2.png) }
+.cncnet-button-16-ra2yr { background-image: url(../img/icons/16/ra2yr.png) }
+
+.cncnet-button-32-cnc95 { background-image: url(../img/icons/32/cnc95.png) }
+.cncnet-button-32-ra95 { background-image: url(../img/icons/32/ra95.png) }
+.cncnet-button-32-ts { background-image: url(../img/icons/32/ts.png) }
+.cncnet-button-32-ra2 { background-image: url(../img/icons/32/ra2.png) }
+.cncnet-button-32-ra2yr { background-image: url(../img/icons/32/ra2yr.png) }

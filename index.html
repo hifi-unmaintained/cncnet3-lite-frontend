@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" 
+    "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+    <head>
+        <title>CnCNet 3.0 Lite</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" type="text/css" href="styles/cncnet.lite.css" media="screen" />
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+        <script type="text/javascript" src="js/cncnet.lite.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('button.cncnet-button-16-cnc95').cncnetLite({ protocol: 'cnc95' });
+                $('button.cncnet-button-16-ra95').cncnetLite({ protocol: 'ra95' });
+                $('button.cncnet-button-16-ts').cncnetLite({ protocol: 'ts' });
+                $('button.cncnet-button-16-ra2').cncnetLite({ protocol: 'ra2' });
+                $('button.cncnet-button-16-ra2yr').cncnetLite({ protocol: 'ra2yr' });
+            });
+        </script>
+    </head>
+    <body>
+        <h1>CnCNet 3.0 instant play buttons</h1>
+        <p>
+            <button class="cncnet-button-cnc cncnet-button-16 cncnet-button-16-cnc95">Play on CnCNet</button><br />
+            <button class="cncnet-button-ra cncnet-button-16 cncnet-button-16-ra95">Play on CnCNet</button><br />
+            <button class="cncnet-button-ts cncnet-button-16 cncnet-button-16-ts">Play on CnCNet</button><br />
+            <button class="cncnet-button-ra2 cncnet-button-16 cncnet-button-16-ra2">Play on CnCNet</button><br />
+            <button class="cncnet-button-ra2 cncnet-button-16 cncnet-button-16-ra2yr">Play on CnCNet</button>
+        </p>
+        <hr />
+        <p><i>Copyright &copy; 2011 Toni Spets</i></p>
+    </body>
+</html>

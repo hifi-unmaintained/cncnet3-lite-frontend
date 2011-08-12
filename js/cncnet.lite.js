@@ -20,7 +20,7 @@
 
             var defaults = {
                 protocol: 'cnc95',
-                url: 'http://hifi.iki.fi/cncnet/lite-backend/'
+                url: 'http://cncnet.cnc-comm.com/api/'
             };
 
             var options = $.extend(defaults, options);

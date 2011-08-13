@@ -56,7 +56,7 @@
                             $('<div />')
                                 .attr('id', 'cncnet-overlay')
                                 .css('position', 'fixed')
-                                .css('background', 'url(img/background.png)')
+                                .css('background', 'url(' + window.cncnet_root_path + 'img/background.png)')
                                 .css('top', '0')
                                 .css('left', '0')
                                 .css('right', '0')

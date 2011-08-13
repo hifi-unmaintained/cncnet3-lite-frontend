@@ -14,7 +14,12 @@
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
+
 (function($) {
+
+    /* for image loading, got a better idea? */
+    window.cncnet_root_path = $('script').last().attr('src').match(/^(.+\/)[^\/]*$/)[1] + '../';
+
     $.fn.extend({
         cncnetLite: function(options) {
 
@@ -48,7 +53,32 @@
                             alert('CnCNet returned an error: '+data.error);
                         } else {
 
-                            window.open(data.result.url);
+                            $('<div />')
+                                .attr('id', 'cncnet-overlay')
+                                .css('position', 'fixed')
+                                .css('background', 'url(img/background.png)')
+                                .css('top', '0')
+                                .css('left', '0')
+                                .css('right', '0')
+                                .css('bottom', '0')
+                                .css('text-align', 'center')
+                                .css('color', '#cc0000')
+                                .css('font-family', 'sans-serif')
+                                .css('font-size', '12pt')
+                                .css('display', 'none')
+                                .css('z-index', '9999999')
+                                .click(function() { $(this).remove() })
+                                .appendTo('body');
+
+                            $('<img />').attr('src', window.cncnet_root_path + 'img/logo.png').appendTo('#cncnet-overlay');
+                            $('<p />').html('Starting game...').appendTo('#cncnet-overlay');
+                            $('<img />').attr('src', window.cncnet_root_path + 'img/loader.gif').appendTo('#cncnet-overlay');
+                            $('<p />').html('You are now connected to CnCNet. Please keep this window open as long as you want to play.').appendTo('#cncnet-overlay');
+                            $('<p />').html('When you are finished, you can simply click this overlay to continue browsing.').appendTo('#cncnet-overlay');
+
+                            $('#cncnet-overlay').fadeIn(1000, function() {
+                                window.open(data.result.url);
+                            });
 
                             ping = setInterval(function() {
                                 $.ajax({
